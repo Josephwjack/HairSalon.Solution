@@ -1,6 +1,6 @@
-# Project Name
+# Eau Claire's Hair Salon
 
-#### By (Joseph Jack)
+#### By Joseph Jack
 
 ## Description
 
@@ -21,14 +21,14 @@
 2. Navigate to project directory from your terminal by entering the following:
 
 ```
-cd CSharpTemplate.Solution
+cd HairSalon.Solution
 ```
 
 * Install `Microsoft .NET SDK 5.0`
 
-* Navigate to ProjectName directory and run `$ dotnet run` in your terminal.
+* Navigate to HairSalon directory and run `$ dotnet run` in your terminal.
 
-* For testing navigate to ProjectName.Tests and run `$ dotnet test` in your terminal.
+
 
 ## Known Bugs
 
