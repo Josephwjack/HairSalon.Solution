@@ -68,24 +68,5 @@ namespace HairSalon.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/search")]
-    public ActionResult Search(string search)
-    {
-      List<Stylist> model = _db.Stylists.Include(Stylists => Stylists.Clients).ToList();
-      Stylist match = new Stylist();
-      List<Stylist> matches = new List<Stylist>{};
-      
-      if (!string.IsNullOrEmpty(search))
-      {
-        foreach(Stylist Stylist in model)
-        {
-        if (Stylist.Name.ToLower().Contains(search))
-          {
-            matches.Add(Stylist);
-          }
-        } 
-        return View(matches);
-      }
-    }
   }
 }
