@@ -6,7 +6,10 @@
 
 <h2>Stylist information:</h2>
 <hr />
-<h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+  <h3>@Html.DisplayNameFor(model => model.Name): @Html.DisplayFor(model => model.Name)<h3>
+  <p>@Html.DisplayNameFor(model => model.Number) : @Html.DisplayFor(model => model.Number)</p>
+  <p>@Html.DisplayNameFor(model => model.Availability) : @Html.DisplayFor(model => model.Availability)</p>
+
+  <p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+  <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
+  <p>@Html.ActionLink("Back to list", "Index")</p>

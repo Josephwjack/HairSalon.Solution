@@ -14,13 +14,17 @@
 
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)
-
-     @Html.LabelFor(model => model.Description)
+    <hr/>
+    @Html.LabelFor(model => model.Description)
     @Html.EditorFor(model => model.Description)
-
+    <hr/>
+    @Html.LabelFor(model => model.Number)
+    @Html.EditorFor(model => model.Number)
+    <hr/>
     @Html.LabelFor(model => model.Stylist)
     @Html.DropDownList("StylistId")
 
     <input type="submit" value="Save" />
 }
+
 <p>@Html.ActionLink("Back to client list", "Index")</p>
